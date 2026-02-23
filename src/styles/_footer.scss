@@ -1,0 +1,27 @@
+@use "variables";
+
+.footer {
+  padding: 15px 8px;
+  background-color: variables.$colorSecondary;
+
+  &__container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  &__logo {
+    width: 15%;
+    margin: 0 auto 10px;
+  }
+}
+
+p {
+  margin-bottom: 10px;
+
+  a {
+    color: variables.$colorAzulClaro;
+  }
+}

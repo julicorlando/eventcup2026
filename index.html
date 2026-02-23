@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copa do Mundo 2026 | Landing Page</title>
+
+    <meta
+      name="description"
+      content="Landing page temática da Copa do Mundo: seleções, estádio, contagem regressiva e chamada para ingressos."
+    />
+    <meta name="theme-color" content="#070b14" />
+
+    <link
+      rel="shortcut icon"
+      href="./src/imgs/worldcup.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./src/styles/main.scss" />
+  </head>
+
+  <body>
+    <!-- Topbar -->
+    <header class="topbar">
+      <div class="container topbar__content">
+        <a class="brand" href="#inicio" aria-label="Ir para o início">
+          <img src="./src/imgs/worldcup.svg" alt="Copa do Mundo" class="brand__logo" />
+          <span class="brand__name">Copa do Mundo</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#selecoes">Seleções</a>
+          <a href="#grupos">Grupos</a>
+          <a href="#placar">Ao Vivo</a>
+          <a href="#estadio">Estádio</a>
+          <a href="#ingressos" class="pill">Ingressos</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="inicio" class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <section class="hero__copy" data-aos="fade-up">
+          <p class="tag">
+            <span class="dot"></span>
+            Abertura • Junho/2026 • 16h
+          </p>
+
+          <h1 class="headline">
+            O maior palco do futebol<br />
+            está prestes a começar
+          </h1>
+
+          <p class="lead">
+            Experiência de landing page inspirada no clima de Copa:
+            seleções, estádio e contagem regressiva para o grande jogo.
+          </p>
+
+          <div class="countdown" role="status" aria-live="polite">
+            <span class="countdown__label">Contagem regressiva</span>
+            <span id="contagem" class="countdown__value">0d 00h 00min 00s</span>
+          </div>
+
+          <div class="hero__cta">
+            <a href="#ingressos" class="button button--primary">Garanta seu ingresso</a>
+            <a href="#sobre" class="button button--ghost">Ver detalhes</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta-card">
+              <span class="meta-card__kicker">Estádio</span>
+              <strong class="meta-card__value">Estádio da Abertura</strong>
+              <span class="meta-card__hint">(defina cidade/país)</span>
+            </div>
+
+            <div class="meta-card">
+              <span class="meta-card__kicker">Valores</span>
+              <strong class="meta-card__value">a partir de R$ 150,00</strong>
+              <span class="meta-card__hint">lotes limitados</span>
+            </div>
+
+            <div class="meta-card">
+              <span class="meta-card__kicker">Transmissão</span>
+              <strong class="meta-card__value">Ao vivo</strong>
+              <span class="meta-card__hint">TV / Streaming</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Match Card -->
+        <aside class="match" data-aos="fade-left">
+          <div class="match__top">
+            <p class="match__title">Abertura</p>
+            <p class="match__subtitle">Seleções em destaque</p>
+          </div>
+
+          <div class="match__teams" aria-label="Confronto">
+            <div class="team">
+              <img src="./src/imgs/brazil.svg" alt="Bandeira do Brasil" class="team__flag" />
+              <div class="team__info">
+                <strong class="team__name">Brasil</strong>
+                <span class="team__note">Favorita histórica</span>
+              </div>
+            </div>
+
+            <div class="vs" aria-hidden="true">VS</div>
+
+            <div class="team">
+              <img src="./src/imgs/argentina.svg" alt="Bandeira da Argentina" class="team__flag" />
+              <div class="team__info">
+                <strong class="team__name">Argentina</strong>
+                <span class="team__note">Tradição e raça</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="match__info">
+            <div class="info-row">
+              <span class="info-row__label">Data</span>
+              <span class="info-row__value">Junho/2026 • 16h</span>
+            </div>
+            <div class="info-row">
+              <span class="info-row__label">Local</span>
+              <span class="info-row__value">Estádio da Abertura</span>
+            </div>
+          </div>
+
+          <a href="#ingressos" class="button button--primary match__button">Comprar agora</a>
+
+          <p class="match__fineprint">
+            * Projeto educacional (EBAC). Layout temático inspirado em eventos esportivos.
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section">
+      <div class="container section__grid" data-aos="fade-right">
+        <div class="panel">
+          <p class="section__eyebrow">Sobre o evento</p>
+          <h2 class="section__title">A energia da Copa, em uma landing moderna</h2>
+          <p class="section__text">
+            Este projeto foi adaptado para o tema Copa do Mundo: seleções, estádios,
+            contagem regressiva e uma estrutura de páginas perfeita para promover jogos,
+            abertura e chamadas de ingressos.
+          </p>
+
+          <div class="features">
+            <div class="feature">
+              <span class="feature__badge">UI</span>
+              <strong class="feature__title">Visual premium</strong>
+              <p class="feature__text">Cards, hierarquia tipográfica e destaque para CTA.</p>
+            </div>
+
+            <div class="feature">
+              <span class="feature__badge">UX</span>
+              <strong class="feature__title">Conteúdo escaneável</strong>
+              <p class="feature__text">Seções claras: jogo, seleções, estádio e ingressos.</p>
+            </div>
+
+            <div class="feature">
+              <span class="feature__badge">DEV</span>
+              <strong class="feature__title">Fácil de manter</strong>
+              <p class="feature__text">HTML semântico + CSS moderno + JS simples.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="media">
+          <img
+            class="media__image"
+            src="./src/imgs/aa_haupttribuene.png"
+            alt="Imagem de estádio"
+            loading="lazy"
+          />
+          <div class="media__overlay" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELEÇÕES -->
+    <section id="selecoes" class="section section--alt">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <p class="section__eyebrow">Seleções</p>
+          <h2 class="section__title">Grandes camisas, grandes histórias</h2>
+          <p class="section__text">
+            Use esta área para apresentar elenco, trajetória, destaques e o grupo.
+          </p>
+        </header>
+
+        <div class="cards" data-aos="zoom-in">
+          <article class="card">
+            <div class="card__head">
+              <img src="./src/imgs/argentina.svg" alt="Argentina" class="card__icon" />
+              <div>
+                <h3 class="card__title">Argentina</h3>
+                <p class="card__subtitle">Tradição e competitividade</p>
+              </div>
+            </div>
+
+            <ul class="card__list">
+              <li>História forte em Copas</li>
+              <li>Estilo: posse e intensidade</li>
+              <li>Destaques: ataque decisivo</li>
+            </ul>
+
+            <a class="card__link" href="#ingressos">Ver pacotes →</a>
+          </article>
+
+          <article class="card">
+            <div class="card__head">
+              <img src="./src/imgs/brazil.svg" alt="Brasil" class="card__icon" />
+              <div>
+                <h3 class="card__title">Brasil</h3>
+                <p class="card__subtitle">A seleção mais vitoriosa</p>
+              </div>
+            </div>
+
+            <ul class="card__list">
+              <li>Maior número de títulos</li>
+              <li>Estilo: técnica e criatividade</li>
+              <li>Objetivo: chegar ao mata-mata</li>
+            </ul>
+
+            <a class="card__link" href="#ingressos">Ver pacotes →</a>
+          </article>
+
+          <article class="card card--highlight">
+            <div class="card__head">
+              <img src="./src/imgs/worldcup.svg" alt="Copa" class="card__icon" />
+              <div>
+                <h3 class="card__title">Experiência</h3>
+                <p class="card__subtitle">O clima do estádio</p>
+              </div>
+            </div>
+
+            <ul class="card__list">
+              <li>Setores e lotes de ingresso</li>
+              <li>Chamada para ação clara</li>
+              <li>Layout moderno “evento premium”</li>
+            </ul>
+
+            <a class="card__link" href="#estadio">Ver estádio →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTÁDIO -->
+    <section id="estadio" class="section">
+      <div class="container section__grid section__grid--reverse" data-aos="fade-left">
+        <div class="panel">
+          <p class="section__eyebrow">Estádio</p>
+          <h2 class="section__title">Arquibancadas cheias. Luzes acesas. Jogo grande.</h2>
+          <p class="section__text">
+            Aqui você pode colocar informações reais (capacidade, cidade, acesso, portões).
+            Também pode usar um mapa embutido do Google Maps se quiser.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill-soft">Acesso fácil</span>
+            <span class="pill-soft">Segurança</span>
+            <span class="pill-soft">Alimentação</span>
+            <span class="pill-soft">Experiência completa</span>
+          </div>
+
+          <a href="#ingressos" class="button button--primary">Ver ingressos</a>
+        </div>
+
+        <div class="media">
+          <img
+            class="media__image"
+            src="./src/imgs/aa_haupttribuene.png"
+            alt="Vista do estádio"
+            loading="lazy"
+          />
+          <div class="media__overlay" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRUPOS -->
+    <section id="grupos" class="section">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <p class="section__eyebrow">Fase de Grupos</p>
+          <h2 class="section__title">Conheça os grupos da Copa</h2>
+          <p class="section__text">Oito grupos com as principais seleções competindo pela liderança.</p>
+        </header>
+
+        <div class="groups-grid" data-aos="zoom-in">
+          <div class="group">
+            <h3 class="group__title">Grupo A</h3>
+            <table class="group__table">
+              <thead>
+                <tr>
+                  <th>Seleção</th>
+                  <th>J</th>
+                  <th>V</th>
+                  <th>E</th>
+                  <th>D</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Brasil</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td class="strong">9</td>
+                </tr>
+                <tr>
+                  <td>Suíça</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td class="strong">6</td>
+                </tr>
+                <tr>
+                  <td>Sérvia</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td class="strong">3</td>
+                </tr>
+                <tr>
+                  <td>Camaraões</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td class="strong">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="group">
+            <h3 class="group__title">Grupo B</h3>
+            <table class="group__table">
+              <thead>
+                <tr>
+                  <th>Seleção</th>
+                  <th>J</th>
+                  <th>V</th>
+                  <th>E</th>
+                  <th>D</th>
+                  <th>Pts</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Argentina</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td class="strong">9</td>
+                </tr>
+                <tr>
+                  <td>México</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td class="strong">6</td>
+                </tr>
+                <tr>
+                  <td>França</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td class="strong">4</td>
+                </tr>
+                <tr>
+                  <td>Polônia</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3</td>
+                  <td class="strong">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDÁRIO -->
+    <section id="calendario" class="section section--alt">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <p class="section__eyebrow">Calendário</p>
+          <h2 class="section__title">Cronograma de jogos</h2>
+          <p class="section__text">Acompanhe as datas e horários dos principais confrontos.</p>
+        </header>
+
+        <div class="matches-list" data-aos="fade-up">
+          <article class="match-item">
+            <div class="match-item__date">
+              <span class="match-item__day">12</span>
+              <span class="match-item__month">Jun</span>
+            </div>
+            <div class="match-item__details">
+              <div class="match-item__teams">
+                <span class="match-item__team">Brasil</span>
+                <span class="match-item__vs">vs</span>
+                <span class="match-item__team">Suíça</span>
+              </div>
+              <div class="match-item__info">
+                <span class="match-item__time">16h00</span>
+                <span class="match-item__stage">Fase de Grupos - Grupo A</span>
+              </div>
+            </div>
+            <a href="#ingressos" class="button button--ghost button--sm">Comprar</a>
+          </article>
+
+          <article class="match-item">
+            <div class="match-item__date">
+              <span class="match-item__day">13</span>
+              <span class="match-item__month">Jun</span>
+            </div>
+            <div class="match-item__details">
+              <div class="match-item__teams">
+                <span class="match-item__team">Argentina</span>
+                <span class="match-item__vs">vs</span>
+                <span class="match-item__team">México</span>
+              </div>
+              <div class="match-item__info">
+                <span class="match-item__time">20h00</span>
+                <span class="match-item__stage">Fase de Grupos - Grupo B</span>
+              </div>
+            </div>
+            <a href="#ingressos" class="button button--ghost button--sm">Comprar</a>
+          </article>
+
+          <article class="match-item">
+            <div class="match-item__date">
+              <span class="match-item__day">15</span>
+              <span class="match-item__month">Jun</span>
+            </div>
+            <div class="match-item__details">
+              <div class="match-item__teams">
+                <span class="match-item__team">Sérvia</span>
+                <span class="match-item__vs">vs</span>
+                <span class="match-item__team">Camaraões</span>
+              </div>
+              <div class="match-item__info">
+                <span class="match-item__time">18h00</span>
+                <span class="match-item__stage">Fase de Grupos - Grupo A</span>
+              </div>
+            </div>
+            <a href="#ingressos" class="button button--ghost button--sm">Comprar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLACAR EM TEMPO REAL -->
+    <section id="placar" class="section">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <p class="section__eyebrow">Ao Vivo</p>
+          <h2 class="section__title">Acompanhe o jogo agora</h2>
+          <p class="section__text">Placar em tempo real do confronto mais esperado.</p>
+        </header>
+
+        <div class="live-match" data-aos="zoom-in">
+          <div class="live-match__badge">● AO VIVO</div>
+          
+          <div class="live-match__info">
+            <span class="live-match__stage">Oitavas de Final</span>
+            <span class="live-match__time">45' + 2</span>
+          </div>
+
+          <div class="live-match__teams">
+            <div class="live-match__team live-match__team--home">
+              <div class="live-match__team-badge">
+                🇧🇷
+              </div>
+              <h3 class="live-match__team-name">Brasil</h3>
+              <div class="live-match__score" id="score-home">2</div>
+            </div>
+
+            <div class="live-match__center">
+              <div class="live-match__vs">VS</div>
+              <div class="live-match__events">
+                <div class="live-match__event">
+                  <strong>Gol!</strong> <span>Neymar ⚽</span>
+                </div>
+                <div class="live-match__event">
+                  <strong>Gol!</strong> <span>Vinicius Jr. ⚽</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="live-match__team live-match__team--away">
+              <div class="live-match__team-badge">
+                🇦🇷
+              </div>
+              <h3 class="live-match__team-name">Argentina</h3>
+              <div class="live-match__score" id="score-away">1</div>
+            </div>
+          </div>
+
+          <div class="live-match__actions">
+            <a href="#ingressos" class="button button--primary">Comprar ingresso</a>
+            <a href="#" class="button button--ghost">Compartilhar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INGRESSOS -->
+    <section id="ingressos" class="section section--alt">
+      <div class="container">
+        <header class="section__header" data-aos="fade-up">
+          <p class="section__eyebrow">Ingressos</p>
+          <h2 class="section__title">Escolha o setor e garanta presença</h2>
+          <p class="section__text">Valores demonstrativos. Ajuste para seu cenário.</p>
+        </header>
+
+        <div class="pricing" data-aos="zoom-in">
+          <article class="price">
+            <h3 class="price__name">Econômico</h3>
+            <p class="price__value">R$ 150</p>
+            <p class="price__desc">Ideal para quem quer viver o jogo gastando menos.</p>
+            <ul class="price__list">
+              <li>Entrada padrão</li>
+              <li>Setor superior</li>
+              <li>Acesso por portão comum</li>
+            </ul>
+            <a href="#" class="button button--ghost">Selecionar</a>
+          </article>
+
+          <article class="price price--best">
+            <div class="price__badge">Mais vendido</div>
+            <h3 class="price__name">Premium</h3>
+            <p class="price__value">R$ 320</p>
+            <p class="price__desc">Conforto + melhor visão para curtir cada lance.</p>
+            <ul class="price__list">
+              <li>Setor central</li>
+              <li>Fila preferencial</li>
+              <li>Melhor visibilidade</li>
+            </ul>
+            <a href="#" class="button button--primary">Selecionar</a>
+          </article>
+
+          <article class="price">
+            <h3 class="price__name">VIP</h3>
+            <p class="price__value">R$ 650</p>
+            <p class="price__desc">Experiência completa para uma noite histórica.</p>
+            <ul class="price__list">
+              <li>Acesso VIP</li>
+              <li>Área exclusiva</li>
+              <li>Serviços premium</li>
+            </ul>
+            <a href="#" class="button button--ghost">Selecionar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__brand">
+          <img class="footer__logo" src="./src/imgs/worldcup.svg" alt="Copa do Mundo" />
+          <div>
+            <strong class="footer__title">Copa do Mundo • Landing</strong>
+            <p class="text">Projeto educacional (EBAC) adaptado para tema Copa do Mundo.</p>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <a href="#inicio">Topo</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#selecoes">Seleções</a>
+          <a href="#ingressos">Ingressos</a>
+        </div>
+
+        <p class="footer__fineprint">
+          © 2026 — fins educacionais. Desenvolvido por
+          <a href="https://github.com/julicorlando">Julio Orlando</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./src/scripts/main.js"></script>
+  </body>
+</html>
